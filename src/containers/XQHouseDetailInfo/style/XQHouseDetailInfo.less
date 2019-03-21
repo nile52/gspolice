@@ -1,0 +1,396 @@
+.data_info_left{
+  background-color: #0f1634;
+  .data_info_left_top{
+    height: 10rem;
+    border: 1px solid #0f1634;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    .data_info_header_center{
+      position: relative;
+      z-index: 99;
+      height: 100%;
+      .data_info_header_center_bg{
+        position: relative;
+        width: 100%;
+        height: 80%;
+        background: url('../../../static/images/gs_bg_03.png') no-repeat center center;
+        top: 20px;
+        text-align: center;
+        color: rgb(139, 246, 235);
+        
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+        .data_info_header_center_left{
+          position: absolute;
+          left: 0rem;
+          bottom: -2px;
+          width: 222px;
+          height: 97px;
+          line-height: 5rem;
+          font-size: 1.5rem;
+          padding-left: 1rem;
+          background: url('../../../static/images/gs_bg_02.png') no-repeat center bottom;
+        }
+        .data_info_header_center_right{
+          position: absolute;
+          right: 0rem;
+          bottom: -2px;
+          width: 142px;
+          height: 99px;
+          line-height: 5rem;
+          padding-right: 1rem;
+          background: url('../../../static/images/gs_bg_01.png') no-repeat center bottom;
+      
+        }
+        .data_info_header_center_text{
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          color: rgb(56, 67, 114);
+          font-size: 1.5rem;
+          cursor: pointer;
+        }
+        .data_info_header_center_time{
+          line-height: 4rem;
+          font-size: 1.8rem;
+          color: rgb(139, 246, 235);
+        }
+      }
+    }
+  }
+  .data_info_left_bottom{
+    height: 20rem;
+    margin: 10px; 
+    border-radius: 20px;
+    border:2px solid rgb(10,35,57);
+    box-shadow: rgb(52,62,98) 0px 0px 20px inset;
+    .anchorBL{
+      display: none;
+    }
+  }
+}
+.data_info_right{
+  background-color: #0f1634;
+  .data_info_right_item{
+    width: 98%;
+    margin: 2% 1%;
+    border:2px solid rgb(10,35,57);
+    box-shadow: rgb(52,62,98) 0px 0px 20px inset;
+  }
+  .data_info_right_1{
+    height: 30%;
+    .data_info_right_1_item_wrap{
+      height: 40%;
+      .data_info_right_1_item{
+        height: 100%;
+        .data_info_right_1_item_item{
+          position: relative;
+          height: 100%;
+          .data_info_right_1_icon{
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            margin-top: -2.5rem;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            text-align: center;
+            color: #fff;
+            line-height: 5rem;
+            i{
+              font-size: 3rem;
+            } 
+          }
+          .right_1_icon_red{
+            background-color: rgb(251, 68, 76);
+          }
+          .right_1_icon_green{
+            background-color: rgb(30, 208, 135);
+          }
+          .right_1_icon_blue{
+            background-color: rgb(32, 147, 228);
+          }
+          .right_1_icon_yellow{
+            background-color: rgb(240, 136, 64);
+          }
+          .data_info_right_1_text{
+            position: absolute;
+            top: 50%;
+            height: 7rem;
+            margin-top: -2.5rem;
+            color: #fff;
+            .data_info_right_1_text_title{
+              height: 2rem;
+              line-height: 3rem;
+            }
+            .data_info_right_1_text_num{
+              height: 3rem;
+              line-height: 3rem;
+              font-size: 1.6rem;
+            }
+            .right_1_red_num{
+              color: rgb(251, 68, 76);
+            }
+            .right_1_green_num{
+              color: rgb(30, 208, 135);
+            }
+            .right_1_blue_num{
+              color: rgb(32, 147, 228);
+            }
+            .right_1_yellow_num{
+              color: rgb(240, 136, 64);
+            }
+          }
+        }        
+      }
+    }
+    .data_info_right_2_item_wrap{
+      height: 20%;
+      .data_info_right_buttom_text{
+        font-size: 16px;
+        text-align: center;
+        color: #fff
+      }
+      .ant-tag{
+        background: #0f1634!important;
+      }
+    }
+  }
+
+  .data_info_right_3{
+    height: 48%;
+    .houseTypePie{
+      width: 100%;
+      height: 100%; 
+      padding-right: 2rem;
+    }
+    .xq_detail_item{
+      margin: 0.8rem 0;
+      .xq_detail_addr_label{
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding-right: 1rem;
+        color: #6395ac;
+        font-size: 1.2rem;
+      }
+      .xq_detail_addr_text{
+        display: block;
+        width: 100%;
+        text-align: left;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+    }
+    .xq_detail_item_first{
+      margin-top: 1rem; 
+    }
+  }
+
+  .data_info_right_2{
+    height: 48%;
+  }
+}
+.xq_window{
+  padding: 10px;
+  position: relative;
+  .xq_window_title{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .xq_sanjiao{
+    width:0;
+    height:0;
+    border-width:10px 10px 0;
+    border-style:solid;
+    border-color: #5C93AB transparent transparent;/*灰 透明 透明 */
+    position: absolute;
+    left: 1rem;
+    bottom: -10px;
+  }
+  .xq_window_btn{
+    display: block;
+    width: 70px; 
+    height: 23px; 
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    background-color: rgb(26, 34, 64);
+    cursor: pointer;
+  }
+}
+.house_info_main{
+  color:#fff; 
+  width: 98%;
+  padding: 2%;
+  margin: 2% 1%;
+  border: 2px solid #0a2339;
+  -webkit-box-shadow: #343e62 0px 0px 20px inset;
+  box-shadow: #343e62 0px 0px 20px inset;
+  height: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .house_title{
+    font-size: 2rem;
+  }
+  .house_title_sub{
+    background: url('../../../static/images/title_bg.png') no-repeat 0 4px;
+    font-size: 1.5rem;
+    padding-left: 20rem;
+    span{
+      background: #0f1634;
+      padding: 0 10px;
+    }
+  }
+  .ant-col {
+    margin-right: 2rem;
+    .house_info{
+      margin: 1rem 0;
+      padding: 1.5rem 2rem;
+      font-size: 14px;
+      // text-align: center;
+      color: #fff;  
+      .room_person_info{
+        color: #6d6e78;
+        span{
+          font-size: 16px;
+          margin-right: 10px;
+        }
+      }
+      .room_person_idcardnum{
+        color: #fff;
+      } 
+    }
+    .type_blue{
+      background: url('../../../static/images/border_blue_long.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      span{
+        color: #01ffff
+      }
+    }
+    .type_red{
+      background: url('../../../static/images/border_red_long.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      span{
+        color: #ff5e5e;
+      }
+    }
+    .type_yellow{
+      background: url('../../../static/images/border_yellow_long.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      span{
+        color: #f5d351;
+      }
+    }
+    .type_green{
+      background: url('../../../static/images/border_green_long.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      span{
+        color: #0ed599;
+      }
+    }
+    .person_more{
+      position: absolute;
+      right: 1rem;
+      top: 1.5rem;
+      font-size: 12px;
+    }
+    .car_info{
+      margin: 1rem 0;
+      padding: 1rem 1.5rem;
+      font-size: 14px;
+      // text-align: center;
+      color: #fff;  
+      border: 2px solid #417b9d;
+      .room_car_info1{
+        color: #747c91;
+        span{
+          font-size: 14px;
+          margin-right: 10px;
+          color: #01ffff;
+        }
+      }
+      .room_car_info2{
+        color: #fff;
+      }
+      .room_car_info3{
+        color: #6da4b9;
+      }
+    }
+  }
+}
+.house_title_sub{
+  margin: 1rem 1rem 0 1rem;
+  background: url('../../../static/images/title_bg.png') no-repeat 0 4px;
+  font-size: 1.5rem;
+  padding-left: 20rem;color: #fff;
+  span{
+    background: #0f1634;
+    padding: 0 10px;
+  }
+}
+.data_info_right_2{
+  .house_person_history{
+    height: 80%;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .ant-col {
+    .house_info{
+      padding: 1.5rem 2rem;
+      margin: 1rem 2rem;
+      font-size: 14px;
+      .room_person_info{
+        color: #6d6e78;
+      }
+      .room_person_idcardnum{
+        color: #fff;
+      } 
+    }
+    .type_orange{
+      background: url('../../../static/images/border_orange_long.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      span{
+        color: #f59a51;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+    .person_more{
+      color: #6d6e78;
+      position: absolute;
+      right: 3rem;
+      top: 1.5rem;
+      font-size: 12px;
+      &:hover{
+        color: #fff;
+      }
+    }    
+  }
+}
+.room_person_img{
+  height: 100px;
+  width: 84px;
+  float: left;
+  margin-right: 10px;
+}
+.clearfix{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+
+

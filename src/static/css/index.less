@@ -1,0 +1,63 @@
+@import "../../../node_modules/antd/dist/antd.less";
+@import "./menu.less";
+html {
+  font-size: 12px;
+}
+body {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;overflow: hidden;}
+#root{
+  height: 100%;
+}
+.ant-layout{
+  height: 100%;
+  .logo{
+    color: white;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 0 0 12px;
+    font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    height: 32px;
+    border-radius: 6px;
+    width: 100%;
+    margin: 16px 0;
+  }
+  .ant-layout-sider-collapsed{
+    .anticon{
+      font-size: 16px;
+      margin-left: 8px;
+    }
+    .nav-text{
+      display: none;
+    }
+    .ant-menu-submenu-vertical > .ant-menu-submenu-title:after{
+      display: none;
+    }
+    .ant-menu-dark:not(.ant-menu-inline) .ant-menu-submenu-open {
+      color: inherit;
+    }
+  }
+  p {
+    margin: 10px 0 10px 0;
+  }
+}
+.gutter-example{
+  .ant-row{
+    //margin-left: 0 !important;
+    //margin-right: 0 !important;
+    >div{
+      background: transparent;
+      border: 0;
+    }
+  }
+}
+.gutter-box {
+  padding: 5px 0;
+}
+
+:global {
+  .ant-card-head-title {
+    font-size: 14px !important;
+  }
+}

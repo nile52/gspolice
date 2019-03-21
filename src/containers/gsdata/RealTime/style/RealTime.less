@@ -1,0 +1,721 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+/*滚动条样式*/
+.card_container::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 0.5rem;    /*高宽分别对应横竖滚动条的尺寸*/
+}
+.card_container::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  background: #7fd3ff;
+  width: 0.5rem; 
+}
+.card_container::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: #1c96d5;
+  border: 2px solid #1c96d5;
+}
+.ant-select-dropdown {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item-selected {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item {
+  color: #1c96d5 !important;
+}
+
+.data_info_left{
+  background-color: #0f1634;
+
+  .data_info_left_bottom{
+    height: 30rem;
+    border: 2px solid #1c96d5;
+    border-top: 0;
+    border-left: 0;
+    
+    .anchorBL{
+      display: none;
+    }
+  }
+  .data_info_right_3{
+    height: 50%;
+    .top_data_title1{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #176395;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+
+    }
+    .face_top_block{
+      text-align: center;
+      .face_top_label{
+        font-size: 1.17rem;
+        margin-bottom: 0;
+      }
+      .face_top_value{
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+      }
+    }
+  }
+  .data_info_right_4{
+    height: 50%;
+    padding: 0 2%;
+    padding: 0 2rem;
+
+    .card_container{
+      height: 88%;
+      overflow-y: auto;
+      overflow-x: hidden;
+
+      .card_item{
+        margin: 0.5rem;
+        border: 2px solid #1c96d5;
+        padding: 0 5px;
+        position: relative;
+        height: 11rem;
+        h3{
+          font-size: 1.2rem;
+          margin-bottom: 0;
+          color: #fff;
+        }
+        p{
+          font-size: 1.1rem;
+          margin-bottom: 0;
+        }
+        .ext_btn{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }   
+  }
+
+}
+
+
+.data_info_right{
+  background-color: #0f1634;
+  // border-left: 2px solid #1c96d5;
+  .data_info_right_item{
+    width: 98%;
+    margin: 0 1%;
+    color: #fff;
+  }
+  .top_data_title{
+    text-align: center;
+    p{
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 10px 
+    }
+  }
+  .data_info_right_1{
+    height: 18.3%;
+    background: url(../../../../static/images/gawing/right_box1_1.png);
+    background-size: 100% 100%;
+    .top_data_title1{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #176395;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+    .face_top_block{
+      text-align: center;
+      .face_top_label{
+        font-size: 1.17rem;
+        margin-bottom: 0;
+      }
+      .face_top_value{
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+      }
+    }
+  }
+  .data_info_right_2{
+    height: 81.6%;
+    background: url(../../../../static/images/gawing/right_box1_4_2px.png);
+    background-size: 100% 100%;
+    padding: 1% 2%;
+    .right_2_top{
+      padding: 5px 5px 0  5px;
+      .camera_btn{
+        width: 71px;
+        height: 47px;
+        background: url(../../../../static/images/gawing/realtime_box_after4_2px.png);
+        background-size: 100% 100%;
+        margin-top: 10px;
+      }
+
+      .searchboxForm{
+        width: calc(~"100%" - 71px);
+        height: 33px;
+        margin-top: 23px;
+        display: inline-block;
+        .searchbox{
+          background: transparent;
+          width: calc(~"100%" - 62px);
+          margin: 0 0 0 5px;
+          padding: 0 5px;
+          border: 2px solid #7fd3ff;
+          border-right: 0;
+          max-height: 30px;
+          outline: none;
+          box-sizing: content-box;
+          height: 35px;
+          vertical-align: top;
+        }
+        .searchboxSubmit {
+          background: transparent;
+          border-color: #fff;
+          background-image: url(../../../../static/images/gawing/search_btn_2px.png);
+          background-repeat: no-repeat;
+          cursor: pointer;
+          height: 34px;
+          width: 43px;
+          text-indent: -99em;
+          border-width: 0;
+          border-style: solid;
+          outline: none;
+        }
+      }
+    }
+    .card_container{
+      @diff: 53px;
+      height: calc(~"94% - " @diff);
+      overflow-y: auto;
+      // overflow-x: hidden;
+      margin: 10px 0;
+
+      .card_item{
+        margin: 7px;
+        margin-top: 0;
+        border: 2px solid #1c96d5;
+        padding: 5px 10px;
+        position: relative;
+        height: 12.5rem;
+        .ext_btn{
+          content: url(../../../../static/images/gawing/realtime_box_after2_2px.png);
+          position: absolute;
+          top: -8px;
+          right: -8px;
+        }
+        h3{
+          font-size: 1.5rem;
+          margin-bottom: 2px;
+          padding-bottom: 2px;
+          width: calc(~"100%" - 50px);
+          color: #fff;
+          border-bottom: 1px solid #fff; 
+        }
+        p{
+          font-size: 1.2rem;
+          margin-bottom: 0;
+        }
+      }
+    }   
+  }
+}
+
+.BMapLabel{
+  animation-name: fadeInUp;
+}
+.xq_window{
+  padding: 0px 15px 10px 15px;
+  position: relative;
+  color: #fff;
+  &:before{
+    content:"";
+    position:absolute;
+    left: -38px;
+    top: 6px;
+    width: 47px;
+    height: 50px;
+    box-sizing:border-box;
+    border-bottom:1px solid #82cbec;
+    transform-origin:bottom center;
+    // animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transform:rotateZ(-50deg);
+    // animation:slash 5s infinite ease;
+  }
+  .xq_window_title{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 3rem;
+  }
+  .xq_window_wrap{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+  }
+  .xq_sanjiao{
+    width:0;
+    height:0;
+    border-width:10px 10px 0;
+    border-style:solid;
+    border-color: #5C93AB transparent transparent;/*灰 透明 透明 */
+    position: absolute;
+    left: 1rem;
+    bottom: -10px;
+  }
+  .xq_window_btn{
+    display: block;
+    width: 70px; 
+    height: 23px; 
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    background-color: rgb(26, 34, 64);
+    cursor: pointer;
+  }
+}
+
+.bottom_fix{
+  width: 75%;
+  height: 50%;
+  bottom: 0px;
+  position: fixed;
+  z-index: 1;
+  .bottom_left_block{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0 0 0.5rem;
+    background: #0f1634;
+    .bottom_video_container{
+      height: 100%;
+      .ant-col-6{
+        height: 49%;
+        margin-bottom: 0.5%;
+        .bottom_monitor_item{
+          height: 100%;
+        }
+      }
+    }
+    .bottom_monitor_item{
+      // margin-bottom: 8px;
+      border: 2px solid #1c96d5;
+      .video_block{
+        height: calc(~"100%" -  30px)
+      }
+      .video_info{
+        border-top: 2px solid #1c96d5;
+        p{
+          font-size: 1.2rem;
+          color: #fff;
+          margin: 2px 5px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: calc(~"100%" -  40px)
+        }
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .ext_btn{
+        content: url(../../../../static/images/gawing/realtime_box_after3_2px.png);
+        position: absolute;
+        bottom: -3px;
+        z-index: 1;
+        right: 1px;
+        cursor: pointer;
+      }
+    }
+  }
+  .bottom_right_block{
+    width: 45%;
+    height: 100%;
+    padding: 5px 0px 0 5px;
+    position: absolute;
+    top: -100%;
+    right: 0; 
+    background: #0f1634;
+    .bottom_right_box{
+      height: 100%;
+      overflow: hidden;
+      color: #fff;
+      border: 2px solid #1c96d5;
+
+      .bottom_monitor_block{
+        margin-bottom: 8px;
+        height: 100%;
+        .video_block{
+          @diff: 40px;
+          height: calc(~"100% - " @diff)
+        }
+        .video_info{
+          border-bottom: 2px solid #1c96d5;
+          position: relative;
+          height: 39px;
+          .video_title{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+
+          &::before{
+            position: absolute;
+            right: 18%;
+            top: -3px;
+            content: url(../../../../static/images/gawing/realtime_box_after1_2px.png);
+          }                 
+          p{
+            font-size: 1.5rem;
+            color: #fff;
+            margin: 3px 5px;
+          }
+        }
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.closeBtn{
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.camera_modal{
+  h3{
+    font-size: 2rem;
+    color: #a2eaff;
+    display: inline-block;
+    span{
+      font-size: 1.67rem;
+      color: #fff;
+      font-weight: normal;
+      margin-left: 130px;
+    }
+  }
+  .ant-modal-close{
+    margin-top: 30px;
+  }
+
+  .ant-modal-close-icon{
+    display: none;
+  }
+  .camera_btn_warpper{
+    display: inline-block;
+    margin-left: 100px;
+    .ant-btn-primary[disabled]{
+      background-color: #091522;
+      color: #ccc;
+      border-width: 3px;
+      border-color: #1B82CB;
+    }
+    .camera_btn{
+      width: 80px;
+      margin-top: 5px;
+    }
+  }
+}
+
+
+.camera_modal{
+  width: 133rem;
+  height: 68rem;
+  background: url(../../../../static/images/gawing/modal_bg_realtime.png);
+  background-size: 100% 100%;
+
+
+  .camera_search_box{
+    width: 508px;
+    height: 44px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 30px;
+    background: url(../../../../static/images/gawing/realtime_search_box.png) no-repeat;
+    background-size: 100% 100%;
+    .search_input{
+      width: 450px;
+      background: transparent;
+      border: 0;
+      height: 38px;
+      color: #fff;
+      padding: 0 20px;
+      position: relative;
+      top: -12px;
+    }
+    .search_submit{
+      width: 50px;
+      background: transparent;
+      border: 0;
+      height: 40px;
+    }
+  }
+
+  .ant-pagination-total-text{
+    color: #fff;
+  }
+  .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis, .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis{
+    color: #fff;
+  }
+
+  .ant-modal-body{
+    padding: 20px;
+  }
+  .ant-modal-header {
+    background: transparent;
+    border-bottom: none;
+  }
+  .ant-modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0 2rem;
+    p{
+      font-size: 1.67rem;
+      color: #fff;
+      text-indent: 2rem;
+    }  
+    
+    .card_container{
+      height: 88%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 15px 0;
+
+      .camera_item{
+        width: 289px;
+        height: 88px;
+        margin: 0.5rem;
+        background: url(../../../../static/images/gawing/realtime_box1.png) no-repeat;
+        background-size: 100% 100%;
+        padding: 0 5px;
+        float: left;
+        position: relative;
+        height: 7.5rem;
+        .ant-checkbox-inner {
+          position: relative;
+          top: 7px;
+          left: 0;
+          display: block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid transparent;
+          border-radius: 2px;
+          background-color: transparent;
+          transition: all .3s;
+          &:focus{
+            outline: none
+          }
+        }
+        .ant-checkbox-disabled .ant-checkbox-inner {
+          border-color: transparent!important;
+        }
+        .camera_title{
+          font-size: 1.2rem;
+          margin-bottom: 0;
+          color: #fff;
+          margin: -15px 10px;
+        }
+        .camera_location{
+          font-size: 1.1rem;
+          margin-bottom: 0;
+        }
+        .ext_btn{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+.entry_exit_video_up{
+  width: 100%;
+  height: 100%;
+}
+.entry_exit_video_down{
+  background: url(../../../../static/images/gawing/loading_video.gif) center center no-repeat;
+  @diff: 0px;
+  width: 100%;
+  height: calc(~"100%" - @diff);
+  .video{
+    width: 100%;
+    height: 100%;
+  }
+}
+.bottom_monitor_ctrl{
+  padding: 2px;
+  .home_pause_btn_left{
+    text-align: left;
+  }
+  .home_pause_btn_right{
+    text-align: right;
+  }
+}
+.home_pause_btn{
+  width: 3rem;
+  height: 2rem;
+  margin-right: 1rem;
+  text-align: center;
+  line-height: 1.7rem;
+  border-radius: 3px;
+  outline: 0;
+  color: rgb(89, 159, 169);
+  border: 1px solid rgb(44, 80, 96);
+  background-color: rgb(14, 21, 51);
+  text-align: center;
+  font-weight: 200;
+  cursor: pointer;
+}
+.home_pause_btn:hover{
+  background-color: rgb(139, 246, 235);
+  color: #333333;
+}
+.eq_list_wrap{
+  width: 100%;
+  .eq_list_row_wrap{
+    width: 100%;
+    height: 38rem;
+    overflow-y: auto;
+    .eq_list_row_item{
+      height: 3rem;
+      border-bottom: 1px solid rgb(89, 159, 169);
+      .eq_list_row_item_text{
+        display: block;
+        text-align: center;
+        height: 3rem;
+        line-height: 3rem;
+        color: rgb(139, 246, 235);
+        font-size: 1.2rem;
+      }
+      .eq_list_row_item_content{
+        display: block;
+        height: 3rem;
+        line-height: 3rem;
+        color: rgb(159, 190, 202);
+        font-size: 1.1rem;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+    .eq_pagination{
+      margin: 1rem 0;
+      .ant-pagination-jump-prev:after{
+        color: rgb(89, 159, 169);
+      }
+      .ant-pagination-jump-next:after{
+        color: rgb(89, 159, 169);
+      }
+      a{
+        color: rgb(89, 159, 169);
+      }
+      .ant-pagination-item-link::after{
+        color: rgb(89, 159, 169);
+      }
+      .ant-pagination-simple-pager{
+        color: rgb(89, 159, 169);
+        .ant-pagination-slash{
+          color: rgb(89, 159, 169);
+        }
+      }
+    }
+  }
+  /*滚动条样式*/
+  .eq_list_row_wrap::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 1rem;    /*高宽分别对应横竖滚动条的尺寸*/
+    border: 1px solid rgb(44, 80, 96);
+  }
+  .eq_list_row_wrap::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgb(139, 246, 235);
+  }
+  .eq_list_row_wrap::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: transparent;
+  }
+}
+
+.face_top_block{
+  .img_block{
+    width: 36px;
+    height: 36px;
+    background-image: url(../../../../static/images/gawing/top_icons.png);
+    margin: 0 auto;
+    // background-repeat:no-repeat;
+    // background-attachment:fixed;
+  }
+  .img_block1{
+    background-position: 72px 36px;
+  }
+  .img_block2{
+    background-position: 72px 72px;
+  }
+  .img_block3{
+    background-position: 72px 108px;
+  }
+}
+
+.new_card_container{
+  .ant-card{
+    background: rgba(28, 150, 213, 0.1);
+  }
+  .ant-card-bordered {
+    border: 0px solid rgba(28, 150, 213, 0.3);
+    color: rgba(255, 255, 255, 0.65);
+  }
+  .ant-card-head{
+    background: rgba(28, 150, 213, 0.2);
+    color: rgba(255, 255, 255, 0.65);
+    padding: 0 10px;
+    border-bottom: 0px solid rgba(28, 150, 213, 0.3);
+  }
+}

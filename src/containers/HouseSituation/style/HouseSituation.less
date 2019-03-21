@@ -1,0 +1,237 @@
+.data_info_left{
+  background-color: #0f1634;
+  .data_info_left_top{
+    height: 10rem;
+    // background-color: red;
+    .header_center_bg{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: url('../../../static/images/header_center_title.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      text-align: center;
+      color: rgb(159, 190, 202);
+      font-size: 2.5rem;
+      line-height: 8rem;
+    }
+    .header_center_left_btn{
+      position: absolute;
+      left: 8rem;
+      bottom: 1rem;
+      width: 11rem;
+      height: 6rem;
+      text-align: center;
+      line-height: 6rem;
+      font-size: 1.5rem;
+      background: url('../../../static/images/header_center_left_btn.png') no-repeat 0 0;
+      background-size: 100% 100%;
+      .header_center_left_text{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        color: rgb(56, 67, 114);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+    .header_center_right_btn{
+        position: absolute;
+        right: 8rem;
+        bottom: 1rem;
+        width: 11rem;
+        height: 6rem;
+        text-align: center;
+        line-height: 6rem;
+        font-size: 1.5rem;
+        background: url('../../../static/images/header_center_right_btn.png') no-repeat 0 0;
+        background-size: 100% 100%;
+      .header_center_right_text{
+          display: inline-block;
+          width: 100%;
+          text-align: left;
+          padding-left: 1.5rem;
+          color: rgb(56, 67, 114);
+          font-size: 1.5rem;
+          cursor: pointer;
+      }
+    }
+    .clock_num{
+        position: absolute;
+        top: 100px;
+        left: 1000px;
+        font-size: 20px;
+        font-weight: 700;
+        color: rgb(159, 190, 202);
+    }
+  }
+  .data_info_left_bottom{
+    display: block;
+    height: 20rem;
+    margin: 20px 10px; 
+    background-color: rgb(35,48,80);
+    border:3px solid rgb(46,59,91);
+    border-radius: 20px;
+    .data_info_usermsg{
+      // display: block;
+      // margin: 10px;
+      // width: 10rem;
+      // height: 6rem;
+      // background-color: beige;
+      color:fuchsia;
+      .house_lay_select{
+        .ant-select {
+          font-size: 1.5rem;
+          color: rgb(89, 159, 169);
+          font-weight: 200 !important;
+        }
+        .ant-select-selection{
+          height: 3rem;
+          background-color: rgb(14, 21, 51);
+          border-color: rgb(44, 80, 96);
+        }
+        .ant-select-arrow{
+          font-size: 1.5rem;
+          color: rgb(89, 159, 169);
+          margin-top: -0.75rem;
+        }
+        .ant-select-selection__rendered{
+          line-height: 3rem;
+        }
+        .ant-select-open .ant-select-selection {
+          border-color: rgb(44, 80, 96);
+          outline: 0;
+          -webkit-box-shadow: 0 0 0 2px rgba(44, 80, 96, 0.2);
+                  box-shadow: 0 0 0 2px rgba(44, 80, 96, 0.2);
+        }
+        .ant-select-selection:hover {
+          border-color: rgb(44, 80, 96);
+        }
+        .ant-select-focused .ant-select-selection,
+        .ant-select-selection:focus,
+        .ant-select-selection:active {
+          border-color: rgb(44, 80, 96);
+          outline: 0;
+          -webkit-box-shadow: 0 0 0 2px rgba(44, 80, 96, 0.2);
+                  box-shadow: 0 0 0 2px rgba(44, 80, 96, 0.2);
+        }
+      }
+      .data_button{
+        float: right !important;
+        display: block !important;
+        background-color: rgb(54,69,102) !important;
+        line-height: 2rem !important;
+        text-align: center !important;
+        width: 8rem !important;
+        height: 2.5rem !important;
+        right: 5rem !important;
+        border: 2px solid rgb(65,78,110) !important;
+        color: rgb(185,192,208) !important;
+        margin-top: 3rem !important;
+      }
+    }
+  }
+}
+.data_info_right{
+  background-color: rgb(15,22,51);
+  .data_unitcase{
+    display:block;
+    width: 97%;
+    height: 17rem;
+    margin:5px;
+    background-color: rgb(35,48,80);
+    border:3px solid rgb(46,59,91);
+    border-radius: 10px;
+    color:rgb(159, 190, 202);
+    .data_unitcase1-1,.data_unitcase1-2,.data_unitcase1-3,.data_unitcase1-4{
+      margin: 10px 33.4px;
+      float: left;
+      text-align: center;
+      .data_Y1{
+          color: red;
+          font-size: 22px;
+      }
+      .data_Y2{
+          color: yellow;
+          font-size: 22px;
+      }
+      .data_Y3{
+          color: blue;
+          font-size: 22px;
+      }
+      .data_Y4{
+          color: green;
+          font-size: 22px;
+      }
+    }
+    .data_YY{
+      color: rgb(255,255,255);
+    }
+    .data_unitcase2-1,.data_unitcase2-2,.data_unitcase2-3,.data_unitcase2-4{
+      margin: 10px 31.1px;
+      float: left;
+      text-align: center;
+      .data_Y5{
+        display: inline-block;
+        width: 3rem;
+        height: 1.7rem;
+        line-height: 1.5rem;
+        border:yellow 1px solid;
+        margin-right: 10px;
+      }
+      .data_Y6{
+        display: inline-block;
+        width: 3rem;
+        height: 1.7rem;
+        line-height: 1.5rem;
+        margin-right: 10px;
+        border:blue 1px solid;
+      }
+      .data_Y7{
+        display: inline-block;
+        width: 3rem;
+        height: 1.7rem;
+        line-height: 1.5rem;
+        margin-right: 10px;
+        border:green 1px solid;
+      }
+      .data_Y8{
+        display: inline-block;
+        width: 3rem;
+        height: 1.7rem;
+        line-height: 1.5rem;
+        margin-right: 10px;
+        border:red 1px solid;
+      }
+    }
+  }  
+  .data_case{
+      font-size: 16px;
+      text-align: center;
+      line-height: 6rem;
+  }
+  .data_unitcase1{
+    width: 459.6px;
+    height: 65px;
+  }
+  .data_unitcase2{
+    width: 459.6px;
+    height: 50px;
+  }
+  .data_unitnews{
+    display:block;
+    width: 97%;
+    height: 59rem;
+    margin:5px;
+    background-color: rgb(35,48,80);
+    border:3px solid rgb(46,59,91);
+    border-radius: 10px;
+    color:rgb(159, 190, 202);
+    .sider_zh_list_row_item{
+      margin: 2rem;
+    }
+  }
+  .zh_list_row_item_text{
+    float: right;
+    margin-right: 12rem;
+  }
+}

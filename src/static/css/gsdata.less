@@ -1,0 +1,76 @@
+.nodata{
+	width: 100px;
+	height: 100px;
+	padding-top: 65px;
+	background: url(../../static/images/gawing/no_data.png) center top no-repeat;
+	color: #697b8c;
+	font-size: 12px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+
+.transparency_modal .ant-modal-content{
+	background: transparent;
+	padding: 5px;
+	position: relative;
+	border:5px solid transparent;
+	border-image:url(../../static/images/gawing/modal_border_1.png) 5 5 5 5 round ;
+	.ant-modal-close{
+		color: #fff
+	}
+	.ant-modal-header {
+		background: rgba(53, 152, 219, 0.3);
+		color: rgba(255, 255, 255, 0.65);
+		border-bottom: 0px;
+		.ant-modal-title{
+			font-size: 1.5rem;
+			color: #fff;
+		}
+	}
+	.ant-modal-body {
+		height: auto
+	}
+	.ant-modal-body,
+	.ant-modal-footer {
+		background: rgba(53, 152, 219, 0.3);
+		border-top: 0;
+		border-radius: 0;
+	}
+
+
+	.ant-table table{
+		border-radius: 0;
+	}
+	.ant-table-thead > tr > th {
+		background: #3598db;
+		color: #fff;
+		border-bottom: 0;
+	}
+	.ant-table-tbody > tr > td{
+		background: rgba(53, 152, 219, 0.3);
+		color: #fff;
+		border-bottom: 0;
+		.result_name:hover{
+			cursor: pointer;
+		}
+	}
+	.ant-table-tbody > tr:hover > td{
+		background: rgba(53, 152, 219, 0.6);
+		color: #fff;
+	}
+
+	.ant-pagination-prev .ant-pagination-item-link, 
+	.ant-pagination-next .ant-pagination-item-link,
+	.ant-pagination-item {
+		border: 1px solid #1c96d5;
+		background: #176395;
+	}
+	.ant-pagination-item-active a,
+	.ant-pagination-item:focus a, 
+	.ant-pagination-item:hover a {
+		color: #fff;
+	}
+
+
+}

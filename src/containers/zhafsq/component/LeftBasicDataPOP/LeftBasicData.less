@@ -1,0 +1,123 @@
+.tag_green{
+  background: #00d900;
+}
+.tag_yellow{
+  background: #ffcb2d;
+}
+.tag_blue{
+  background: #04a9eb;
+}
+.tag_orange{
+  background: #ffcb2d;
+}
+.tag_red{
+  background: #8f0100;
+}
+.tag_purple{
+  background: #800080;
+}
+.tag_grey{
+  background: #808080;
+}
+
+.color_tags{
+    padding: 20px 15px;
+    .color_tag{
+      display: inline-block;
+      color: #fff;
+      font-size: 14px;
+    }
+    .tag{
+      width: 26px;
+      height: 13px;
+      display: inline-block;
+      margin: 0 5px;
+    }
+}
+.population_bar_block{
+  padding: 0 20px;
+  height: 280px;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .bar_data{
+    margin-bottom: 5px;
+    p{
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 5px;
+      width: 50px;
+      float: left;
+      span{
+        font-size: 14px;
+      }
+    }
+    .bar_item{
+      height: 16px;
+      display: inline-block;
+      color: #fff;
+      cursor: default;
+    }
+    .bar_green{
+      background: #00d900;
+    }
+    .bar_yellow{
+      background: #ffcb2d;
+    }
+    .bar_blue{
+      background: #04a9eb;
+    }
+    .bar_orange{
+      background: #ffcb2d;
+    }  
+    .bar_red{
+      background: #8f0100;
+    } 
+    .bar_purple{
+      background: #800080;
+    }
+    .bar_grey{
+      background: #808080;
+    }
+
+    .population_bar{
+      padding: 5px 0;
+      float: left;
+      .legend{
+        display: none;
+        min-width: 150px;
+        position: absolute;
+        background: #000;
+        color: #fff;
+        transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s, top 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+        background-color: rgba(50, 50, 50, 0.7);
+        border-width: 0px;
+        border-color: rgb(51, 51, 51);
+        border-radius: 4px;
+        color: rgb(255, 255, 255);
+        font: 14px/21px "Microsoft YaHei";
+        padding: 5px;
+        pointer-events: none;
+        .legend_item{
+          .tag{
+            display: inline-block;
+            margin-right: 5px;
+            border-radius: 10px;
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+      &:hover{
+        background: rgba(255, 255, 255, 0.2);
+        .legend{
+          display: block;
+        }
+      }
+    }
+
+
+
+  }
+}

@@ -1,0 +1,59 @@
+.page-container{
+  background: #0c1127;
+  height: 100%;
+  width: 100%;
+}
+.top_fix{
+  position: absolute;
+  width: 100%;
+  height: 98px;
+  top: 0;
+  z-index: 1;
+  .scroll_notice{
+    line-height: 54px;
+    overflow: hidden;
+    width: 940px;
+    height: 58px;
+    margin: 15px auto 0;
+    background: url(../../../../static/images/zhafsq/scroll_notice_box.png);
+
+    ul{
+      margin: 0 40px;
+      li{
+        color: #fff;
+        font-size: 17px;          
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+    
+  }
+}
+
+.bottom_fix{
+  position: relative;
+  height: auto;
+  zoom: 1;
+  display: block;
+  box-sizing: border-box;
+  width: 1018px;
+  top: 96px;
+  left: 429px;
+}
+
+.left_fix{
+  position: absolute;
+  width: 400px;
+  height: 60%;
+  top: 49px;
+  left: 7px;
+}
+
+.right_fix{
+  position: absolute;
+  width: 450px;
+  height: calc(~'100%' - 180px);
+  top: 49px;
+  right: 11px;
+}

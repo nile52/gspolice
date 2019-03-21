@@ -1,0 +1,345 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+/*滚动条样式*/
+.card_container::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 0.5rem;    /*高宽分别对应横竖滚动条的尺寸*/
+}
+.card_container::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  background: #7fd3ff;
+  width: 0.5rem; 
+}
+.card_container::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: #1c96d5;
+  border: 2px solid #1c96d5;
+}
+/*滚动条样式*/
+.ant-select-dropdown {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item-selected {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item {
+  color: #1c96d5 !important;
+}
+
+.data_info_left{
+  background-color: #0f1634;
+  .data_info_right_item{
+    width: 99.5%;
+    margin: 0 0.5%;
+    color: #fff;
+  }
+  .data_info_right_1{
+    height: 48%;
+    color: #fff;
+    margin-top: 0.5%;
+    .top_item_left{
+      width: 45%;
+      height: 90%;
+      border: 3px solid #1c96d5;
+      position: relative;
+      margin-right: 13px;
+      margin-top: 3.5%;
+      &::before{
+        content: url(../../../../static/images/gawing/border_left_blue.png);
+        position: absolute;
+        bottom: -11px;
+        z-index: 1;
+        left: -6px;
+      }
+      &::after{
+        content: url(../../../../static/images/gawing/people_box_after1.png);
+        position: absolute;
+        bottom: 11px;
+        z-index: 1;
+        right: -16px;
+      }
+      .item_people_info{
+        margin: 1rem;
+        img{
+          width: 13rem;
+          height: 16rem;
+          float: left;
+          margin-right: 1rem;
+          border: 2px solid #1c96d5;
+        }
+        .people_text{
+          width: 100%;
+          // float: right;
+          p{
+            margin-bottom: 0;
+            font-size: 1.2rem;
+            span{
+              border: 2px solid #1c96d5;
+              margin-right: 5px;
+              padding: 0 5px;
+            }
+          }
+        }
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 1.2rem;
+      }      
+    }
+    .top_item_right{
+      @diff: 13px;
+      width: calc(~"55%" - @diff);
+      height: 100%;
+      .item_car_info{
+        height: 49%;
+        border: 3px solid #1c96d5;
+        position: relative;
+        margin-bottom: 0.5%;
+        &::before{
+          content: url(../../../../static/images/gawing/people_box_after3.png);
+          position: absolute;
+          top: -4px;
+          z-index: 1;
+          right: -3px;
+        }
+        &::after{
+          content: url(../../../../static/images/gawing/people_box_after1.png);
+          position: absolute;
+          top: 85px;
+          z-index: 1;
+          left: -16px;
+        }
+      }
+      .item_house_info{
+        height: 50%;
+        border: 3px solid #1c96d5;
+        position: relative;
+        .ext_btn{
+          width: 86px;
+          height: 34px;
+          position: absolute;
+          top: -3px;
+          z-index: 1;
+          right: -3px;
+          background: url(../../../../static/images/gawing/people_box_after4.png);
+          cursor: pointer;
+        }
+      }
+      .card_container{
+        height: 100%;
+        overflow: auto;
+      }
+      .card_item{
+        height: calc(~"100%" - 20px);
+        margin: 10px;
+        img{
+          width: 35%;
+          height: 90%;
+          float: left;
+          margin-right: 1rem;
+          border: 2px solid #1c96d5;
+        }
+        .card_item_right{
+          width: 100%;
+          p{
+            font-size: 1.2rem;
+            margin-bottom: 0;
+          }
+          
+        }
+
+      }
+    }
+  }
+
+  .data_info_right_2{
+    height: 50%;
+    margin-top: 0.5%;
+    border: 3px solid #1c96d5;
+    .card_container{
+      overflow-y: auto;
+      height: 88%;
+      .right_monitor_block{
+        height: 5rem;
+        background: url(../../../../static/images/gawing/marker_face.png)  center left no-repeat;
+        position: relative;
+        padding-left: 4rem;
+        border: 3px solid #1c96d5;
+        margin: 5px 15px;
+        p{
+          margin-bottom: 0px;
+        }
+      }      
+    }
+  }
+}
+.data_info_right{
+  background-color: #0f1634;
+  .data_info_right_item{
+    width: 98%;
+    margin: 0 1%;
+    color: #fff;
+  }
+  .top_data_title{
+    text-align: center;
+    p{
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 10px 
+    }
+  }
+
+  .data_info_right_1{
+    height: 33%;
+    background: url(../../../../static/images/gawing/right_box3_1.png);
+    background-size: 100% 100%;
+    color: #fff;
+    .ant-form{
+      .ant-form-item{
+        margin-bottom: 10px;
+      }
+      .ant-form-item-label {
+        label{
+          color: #fff;
+          font-size: 1.2rem;
+        }
+      }
+      input{
+        border: 1px solid #1c96d5;
+        background: #176395;
+      }
+    }
+    .top_data_title1{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #176395;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+    .face_top_block{
+      text-align: center;
+      .face_top_label{
+        font-size: 1.17rem;
+        margin-bottom: 0;
+      }
+      .face_top_value{
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+      }
+    }
+  }
+
+  .data_info_right_2{
+    height: 67%;
+    background: url(../../../../static/images/gawing/right_box3_2.png);
+    background-size: 100% 100%;
+    padding: 2rem 10px 10px 10px;
+
+    .top_data_title1{
+      p{
+        margin-bottom: 0px;
+        font-size: 1.5rem;
+        margin: 0 5px;
+      }
+    }
+    .card_container{
+      overflow-y: auto;
+      margin-top: 5px;
+      @diff: 60px;
+      height: calc(~"100%" - @diff);
+      padding: 0 5px;
+      .right_monitor_block{
+        height: 6rem;
+        background: url(../../../../static/images/gawing/marker_face.png)   3% center no-repeat;
+        position: relative;
+        padding-left: 4rem;
+        border: 3px solid #1c96d5;
+        margin-bottom: 5px;
+        p{
+          margin-bottom: 0px;
+          font-size: 1.2rem;
+        }
+      }      
+    }
+  }
+}
+
+.BMapLabel{
+  animation-name: fadeInUp;
+}
+.xq_window{
+  padding: 0px 15px 10px 15px;
+  position: relative;
+  color: #fff;
+  &:before{
+    content:"";
+    position:absolute;
+    left: -38px;
+    top: 6px;
+    width: 47px;
+    height: 50px;
+    box-sizing:border-box;
+    border-bottom:1px solid #82cbec;
+    transform-origin:bottom center;
+    // animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transform:rotateZ(-50deg);
+    // animation:slash 5s infinite ease;
+  }
+  .xq_window_title{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 3rem;
+  }
+  .xq_window_wrap{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+  }
+  .xq_sanjiao{
+    width:0;
+    height:0;
+    border-width:10px 10px 0;
+    border-style:solid;
+    border-color: #5C93AB transparent transparent;/*灰 透明 透明 */
+    position: absolute;
+    left: 1rem;
+    bottom: -10px;
+  }
+  .xq_window_btn{
+    display: block;
+    width: 70px; 
+    height: 23px; 
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    background-color: rgb(26, 34, 64);
+    cursor: pointer;
+  }
+}

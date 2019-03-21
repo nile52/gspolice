@@ -1,0 +1,420 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+/*滚动条样式*/
+.card_container::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 0.5rem;    /*高宽分别对应横竖滚动条的尺寸*/
+}
+.card_container::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  background: #7fd3ff;
+  width: 0.5rem; 
+}
+.card_container::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: #1c96d5;
+  border: 2px solid #1c96d5;
+}
+/*滚动条样式*/
+.ant-select-dropdown {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item-selected {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item {
+  color: #1c96d5 !important;
+}
+.data_info_left{
+  background-color: #0f1634;
+  .data_info_left_bottom{
+    height: 30rem;
+    border-right: 2px solid #1c96d5;
+    border-bottom: 2px solid #1c96d5;
+    box-shadow: rgb(52,62,98) 0px 0px 20px inset;
+    .anchorBL{
+      display: none;
+    }
+  }
+}
+.data_info_right{
+  background-color: #0f1634;
+  // border-left: 2px solid #1c96d5;
+  .data_info_right_item{
+    width: 98%;
+    margin: 0 1%;
+    color: #fff;
+  }
+  .top_data_title{
+    text-align: center;
+    p{
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 10px 
+    }
+  }
+  .data_info_right_1{
+    height: 18.5%;
+    background: url(../../../../static/images/gawing/right_box1_1.png);
+    background-size: 100% 100%;
+    .top_data_title1{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #176395;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+    .face_top_block{
+      text-align: center;
+      .face_top_label{
+        font-size: 1.17rem;
+        margin-bottom: 0;
+      }
+      .face_top_value{
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+      }
+    }
+  }
+  .data_info_right_2{
+    height: 29%;
+    padding: 0 10px;
+    background: url(../../../../static/images/gawing/right_box1_2.png);
+    background-size: 100% 100%;
+    .top_data_title2{
+      text-align: center;
+      padding-top: 2.25rem;
+      // border-bottom: 2px solid #1c96d5;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      // margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+    .card_container{
+      height: 70%;
+      overflow-y: auto;
+      .mac_card_1{
+        margin: 5px;
+        margin-top: 0;
+        padding: 5px;
+        border: 3px solid #1c96d5;
+        position: relative;
+        &::before{
+          content: url(../../../../static/images/gawing/mac_box_after1.png);
+          position: absolute;
+          top: -7px;
+          right: -3px;
+        }
+        h3{
+          font-size: 1.2rem;
+          margin-bottom: 0;
+          color: #fff;
+        }
+        p{
+          font-size: 1.1rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .data_info_right_3{
+    height: 52.5%;
+    background: url(../../../../static/images/gawing/right_box1_3.png);
+    background-size: 100% 100%;
+    padding: 0 15px;
+    .top_data_title2{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #1c96d5;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+    .card_container{
+      height: 70%;
+      overflow-y: auto;
+      // padding: 5px;
+      .card_block{
+        padding: 5px;
+        height: 13rem;
+        position: relative;
+        .mac_card_2{
+          // margin: 5px;
+          padding: 5px 10px;
+          border: 3px solid #1c96d5;
+          margin-bottom: 1rem;
+          position: relative;
+          &::before{
+            content: url(../../../../static/images/gawing/mac_box_after1.png);
+            position: absolute;
+            top: -7px;
+            right: -3px;
+          }
+          h3{
+            font-size: 1.5rem;
+            margin-bottom: 0;
+            color: #fff;
+          }
+          p{
+            font-size: 1.1rem;
+            margin-bottom: 0;
+          }
+          .mac_card_2_ext_btn{
+            position: absolute;
+            bottom: 0;
+            right: 0; 
+          }
+          .ext_btn{
+            position: absolute;
+            bottom: -3px;
+            right: -3px;
+            width: 55px;
+            height: 25px;
+            cursor: pointer;
+            background: url(../../../../static/images/gawing/monitor_box_after5.png)
+          }
+          .btn-open{
+            bottom: -10px;
+            height: 32px;
+            z-index: 3;
+            background: url(../../../../static/images/gawing/monitor_box_after6.png)
+          }
+        }
+        .ext_block{
+          display: none;
+          border: 3px solid #1c96d5;
+          padding: 5px 10px;
+          position: relative;
+          z-index: 2;
+          top: -8px;
+          font-size: 1.1rem;
+          background: #0f1634
+        }
+      }
+    }
+  }
+}
+
+.BMapLabel{
+  animation-name: fadeInUp;
+}
+.xq_window{
+  padding: 0px 15px 10px 15px;
+  position: relative;
+  color: #fff;
+  &:before{
+    content:"";
+    position:absolute;
+    left: -38px;
+    top: 6px;
+    width: 47px;
+    height: 50px;
+    box-sizing:border-box;
+    border-bottom:1px solid #82cbec;
+    transform-origin:bottom center;
+    // animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transform:rotateZ(-50deg);
+    // animation:slash 5s infinite ease;
+  }
+  .xq_window_title{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 3rem;
+  }
+  .xq_window_wrap{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+  }
+  .xq_sanjiao{
+    width:0;
+    height:0;
+    border-width:10px 10px 0;
+    border-style:solid;
+    border-color: #5C93AB transparent transparent;/*灰 透明 透明 */
+    position: absolute;
+    left: 1rem;
+    bottom: -10px;
+  }
+  .xq_window_btn{
+    display: block;
+    width: 70px; 
+    height: 23px; 
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    background-color: rgb(26, 34, 64);
+    cursor: pointer;
+  }
+}
+
+
+
+.bottom_fix{
+  width: 75%;
+  bottom: 0px;
+  position: fixed;
+  background: #0f1634;
+  z-index: 1;
+  // font-style: italic;
+  padding: 5px;
+  .bottom_left_block{
+    width: 100%;
+    padding: 0.5rem;
+    border: 3px solid #1c96d5;
+    position: relative;
+    &::before{
+      content: url(../../../../static/images/gawing/mac_box_after3.png);
+      position: absolute;
+      top: -9px;
+      right: -9px;
+    }
+    .bottom_data_title{
+      border-bottom: 2px solid #1c96d5;
+      padding-bottom: 0.25rem;
+      margin: 0 10px 10px 10px;
+      .title_icon{
+        margin: -2px 2px 0 5px;
+      }
+      p{
+        color: #fff;
+        font-size: 1.3rem;
+        margin-bottom: 0;
+      }
+    }
+    .card_container{
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding:0 10px;
+      height: 31.5rem;
+      .bottom_card{
+        padding: 8px 10px;
+        margin-bottom: 8px;
+        /*border: 3px solid #1c96d5;*/
+        height: 7.3rem;
+        background: rgba(28, 150, 213, 0.1);
+        position: relative;
+        /*&::before{
+          content: url(../../../../static/images/gawing/mac_box_after1.png);
+          position: absolute;
+          top: -7px;
+          right: -3px;
+        }*/
+        p{
+          font-size: 1.3rem;
+          margin-bottom: 0;
+          color: #fff;
+        }
+      }      
+    }
+  }
+}
+
+.face_top_block{
+  .img_block{
+    width: 36px;
+    height: 36px;
+    background-image: url(../../../../static/images/gawing/top_icons.png);
+    margin: 0 auto;
+    // background-repeat:no-repeat;
+    // background-attachment:fixed;
+  }
+  .img_block1{
+    background-position: 108px 36px;
+  }
+  .img_block2{
+    background-position: 108px 72px;
+  }
+  .img_block3{
+    background-position: 108px 108px;
+  }
+}
+
+.new_card_container{
+
+  .card_1{
+    border-radius: 0px;
+    background: rgba(28, 150, 213, 0.1);
+    border: 0px solid rgba(28, 150, 213, 0.3);
+    color: rgba(255, 255, 255, 0.65);    
+    .ant-card-head{
+      background: rgba(28, 150, 213, 0.2);
+      color: rgba(255, 255, 255, 0.65);
+      padding: 0 10px;
+      border-bottom: 0px solid rgba(28, 150, 213, 0.3);
+    }
+    .ant-card-body {
+      padding: 10px; 
+    }    
+  }
+
+  .card_2{
+    border-radius: 0px;
+    background: rgba(28, 150, 213, 0.1);
+    border: 1px solid rgba(28, 150, 213, 0.3);
+    color: rgba(255, 255, 255, 0.65);    
+    .ant-card-head{
+      background: rgba(28, 150, 213, 0.2);
+      color: rgba(255, 255, 255, 0.65);
+      padding: 0 10px;
+      border-bottom: 1px solid rgba(28, 150, 213, 0.3);
+    }
+    .ant-card-body {
+      padding: 10px; 
+    }    
+  }
+
+  .card_3{
+    border-radius: 0px;
+    background: rgba(28, 150, 213, 0.1);
+    border: 1px solid rgba(28, 150, 213, 0.3);
+    color: rgba(255, 255, 255, 0.65);    
+    .ant-card-head{
+      color: rgba(255, 255, 255, 0.65);
+      padding: 0 10px;
+      border-bottom: 1px solid rgba(28, 150, 213, 0.3);
+    }
+    .ant-card-body {
+      padding: 10px; 
+    }    
+  }
+
+}

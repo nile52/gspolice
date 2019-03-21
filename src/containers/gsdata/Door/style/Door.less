@@ -1,0 +1,449 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+/*滚动条样式*/
+.card_container::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 0.5rem;    /*高宽分别对应横竖滚动条的尺寸*/
+}
+.card_container::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  background: #7fd3ff;
+  width: 0.5rem; 
+}
+.card_container::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: #1c96d5;
+  border: 2px solid #1c96d5;
+}
+/*滚动条样式*/
+.ant-select-dropdown {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item-selected {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item {
+  color: #1c96d5 !important;
+}
+
+.data_info_left{
+  background-color: #0f1634;
+  .data_info_left_bottom{
+    height: 30rem;
+    border-bottom:2px solid #1c96d5;
+    border-right:2px solid #1c96d5;
+    box-shadow: rgb(52,62,98) 0px 0px 20px inset;
+    .anchorBL{
+      display: none;
+    }
+  }
+}
+.data_info_right{
+  background-color: #0f1634;
+  .data_info_right_item{
+    width: 98%;
+    margin: 0 0.5%;
+    color: #fff;
+  }
+  .top_data_title{
+    text-align: center;
+    p{
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 10px 
+    }
+  }
+
+  .data_info_right_1{
+    height: 18.5%;
+    background: url(../../../../static/images/gawing/right_box1_1.png);
+    background-size: 100% 100%;
+    .top_data_title1{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #176395;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+
+
+    }
+    .face_top_block{
+      text-align: center;
+      .face_top_label{
+        font-size: 1.17rem;
+        margin-bottom: 0;
+      }
+      .face_top_value{
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+      }
+    }
+  }
+  .data_info_right_2{
+    height: 29%;
+    background: url(../../../../static/images/gawing/right_box1_2.png);
+    background-size: 100% 100%;
+    padding: 0 10px;
+    position: relative;
+    .ext_btn{
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      color: #1c96d5;
+      font-size: 1.2rem;
+    }
+
+    .top_data_title2{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #1c96d5;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      padding-bottom: 0.25rem;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+    .card_container{
+      overflow-y: auto;
+      @diff: 89px;
+      height: calc(~"100%" - @diff);
+      padding: 0 5px;
+      margin-top: 10px;
+      .police_block{
+        margin-bottom: 1rem;
+        border: 3px solid #1c96d5;
+        padding: 0 5px 5px 5px;
+        .block_title{
+          p{
+            font-size: 1.5rem;
+            margin-bottom: 0;            
+          }
+        }
+      }
+      .police_img{
+        width: 20%;
+        img{
+          width: 3.85rem;
+          height: 5rem;
+          margin-right: 2px;
+          border: 2px solid #1c96d5;
+        }
+      }
+      .police_text {
+        width: 80%;
+        height: 5rem;
+        overflow: hidden;
+        p{
+          margin-bottom: 0px;
+          font-size: 1.2rem;
+          overflow: hidden;
+        }
+      }     
+    }
+
+  }
+  .data_info_right_3{
+    height: 52.5%;
+    background: url(../../../../static/images/gawing/right_box1_3.png);
+    background-size: 100% 100%;
+    padding: 2rem 10px 0 10px;
+
+    .card_container{
+      overflow-y: auto;
+      @diff: 52px;
+      height: calc(~"100%" - @diff);
+      .right_monitor_block{
+        height: 10rem;
+        position: relative;
+        padding: 7px;
+        border: 3px solid #1c96d5;
+        margin: 5px;
+        margin-top: 0;
+        .right_top_btn{
+          position: absolute;
+          top: 12px;
+          right: 18px;
+          color: #1c96d5;
+          font-size: 1.2rem;
+          background: url(../../../../static/images/gawing/door_box_after1.png);
+          height: 35px;
+          width: 45px;
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          cursor: pointer;
+        }
+        img{
+          float: left;
+          width: 20%;
+          height: 8.3rem;
+          margin-right: 2%;
+          border: 2px solid #1c96d5;
+        }
+        p{
+          margin-bottom: 0px
+        }
+        .right_monitor_title{
+          font-size: 1.2rem;
+          padding-top: 1rem;
+          font-weight: 600;
+          padding-bottom: 0.5rem;
+          
+        }
+        .right_monitor_info{
+          width: 78%;
+          float: right;
+          h3{
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 0;
+          }
+          p{
+            font-size: 1.2rem;
+          }
+        }
+
+
+
+      }
+
+    }
+
+  }
+
+}
+
+.BMapLabel{
+  animation-name: fadeInUp;
+}
+.xq_window{
+  padding: 0px 15px 10px 15px;
+  position: relative;
+  color: #fff;
+  &:before{
+    content:"";
+    position:absolute;
+    left: -38px;
+    top: 6px;
+    width: 47px;
+    height: 50px;
+    box-sizing:border-box;
+    border-bottom:1px solid #82cbec;
+    transform-origin:bottom center;
+    // animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transform:rotateZ(-50deg);
+    // animation:slash 5s infinite ease;
+  }
+  .xq_window_title{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 3rem;
+  }
+  .xq_window_wrap{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+  }
+  .xq_sanjiao{
+    width:0;
+    height:0;
+    border-width:10px 10px 0;
+    border-style:solid;
+    border-color: #5C93AB transparent transparent;/*灰 透明 透明 */
+    position: absolute;
+    left: 1rem;
+    bottom: -10px;
+  }
+  .xq_window_btn{
+    display: block;
+    width: 70px; 
+    height: 23px; 
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    background-color: rgb(26, 34, 64);
+    cursor: pointer;
+  }
+}
+
+
+.bottom_fix{
+  width: 75%;
+  bottom: 0px;
+  position: fixed;
+  background: #0f1634;
+  z-index: 1;
+
+  .card_container{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 36.5rem;
+    padding: 0 5px;
+  }
+  .botto_block_tilte{
+    margin: 0 10px;
+    p{
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      .title_icon {
+          margin: -2px 2px 0 5px;
+      }
+    }
+  }
+  .bottom_left_block{
+    width: 39%;
+    margin: 0.5% 0 0.5% 0.5%;
+    padding: 5px;
+    border: 3px solid #1c96d5;
+    position: relative;
+
+    &::before{
+      content: url(../../../../static/images/gawing/door_box_after2.png);
+      position: absolute;
+      top: -4px;
+      z-index: 1;
+      right: -3px;
+    }
+    &::after{
+      content: url(../../../../static/images/gawing/border_left_blue.png);
+      position: absolute;
+      bottom: -11px;
+      z-index: 1;
+      left: -6px;
+    }
+
+    .bottom_monitor_item{
+      margin-bottom: 8px;
+      border: 3px solid #1c96d5;
+      padding: 0 5px;
+      p{
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+      }
+      h3{
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 0;
+      }
+      .ext_btn{
+        content: url(../../../../static/images/gawing/door_box_after1.png);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        right: 4px;
+        cursor: pointer;
+      }
+
+    }
+  }
+  .bottom_right_block{
+    width: 60%;
+    padding: 5px;
+    border: 3px solid #1c96d5;
+    margin: 0.5% 0 0.5% 0.5%;
+    position: relative;
+
+    &::before{
+      content: url(../../../../static/images/gawing/door_box_after2.png);
+      position: absolute;
+      top: -4px;
+      z-index: 1;
+      right: -3px;
+    }
+    &::after{
+      content: url(../../../../static/images/gawing/border_left_blue.png);
+      position: absolute;
+      bottom: -11px;
+      z-index: 1;
+      left:-6px;
+    }
+    .bottom_monitor_item{
+      margin-bottom: 8px;
+      padding: 0 5px;
+      border: 3px solid #1c96d5;
+      p{
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+      }
+      h3{
+        font-size: 1.5rem;
+        color: #fff;
+        margin-bottom: 0;
+      }
+      .bottom_item_left{
+        width: 50%; 
+        img{
+          width: 46%;
+          height: 8rem;
+          margin-right:2%;
+          border: 2px solid #1c96d5;
+        }
+      }
+      .bottom_item_right{
+        width: 50%; 
+      }
+      .ext_btn{
+        content: url(../../../../static/images/gawing/door_box_after1.png);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        right: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+.face_top_block{
+  .img_block{
+    width: 36px;
+    height: 36px;
+    background-image: url(../../../../static/images/gawing/top_icons.png);
+    margin: 0 auto;
+    // background-repeat:no-repeat;
+    // background-attachment:fixed;
+  }
+  .img_block1{
+    background-position: 144px 36px;
+  }
+  .img_block2{
+    background-position: 144px 72px;
+  }
+  .img_block3{
+    background-position: 144px 108px;
+  }
+}

@@ -1,0 +1,636 @@
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+/*滚动条样式*/
+.card_container::-webkit-scrollbar,
+.ant-cascader-menu::-webkit-scrollbar,
+.ant-tabs-tabpane::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 0.5rem;    /*高宽分别对应横竖滚动条的尺寸*/
+}
+.card_container::-webkit-scrollbar-thumb,
+.ant-cascader-menu:-webkit-scrollbar-thumb,
+.ant-tabs-tabpane::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  background: #7fd3ff;
+  width: 0.5rem; 
+}
+.card_container::-webkit-scrollbar-track,
+.ant-cascader-menu::-webkit-scrollbar-track,
+.ant-tabs-tabpane::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  border-radius: 0;
+  background: #1c96d5;
+  border: 2px solid #1c96d5;
+}
+/*滚动条样式*/
+.ant-select-dropdown {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item-selected {
+  background-color: #0f1634 !important;
+}
+.ant-select-dropdown .ant-select-dropdown-menu-item {
+  color: #1c96d5 !important;
+}
+
+.search_box{
+  padding: 5px 5px 0 5px;
+  .search_form {
+    width: 100%;
+  }
+  input, button{
+    border: 2px solid #7fd3ff;
+    background: #0f1633;
+    height: 28px;
+    border-radius: 0;
+    color: #1c96d5;
+  }
+  input{
+    padding: 0 5px;
+    width: 100%;
+    color: #1c96d5;
+  }
+}
+
+// cascader
+.ant-cascader-picker{
+  background: transparent;
+  color: #fff;
+  border: 0;
+  input{
+    border: 0;
+    outline: none;
+    box-shadow: none;
+  }
+  .ant-cascader-picker-label{
+    font-size: 1.5rem;
+  }
+} 
+.ant-cascader-picker:focus{
+  .ant-cascader-input{
+    box-shadow: none;      
+  }
+} 
+.ant-cascader-menu{
+  background: #0f1634;
+  color: #fff;
+  border-right: 1px solid #1c96d5;
+}
+.ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover{
+  background: #176395
+}
+.ant-cascader-menu-item:hover{
+  background: #2c5060
+}
+.ant-input:focus{
+  box-shadow: none;
+}
+// cascader
+
+
+// tabs
+.ant-tabs{
+  height: 100%;
+  .ant-tabs-content{
+    height: calc(~"100%");
+    .ant-tabs-tabpane{
+      padding: 5px;
+      height: calc(~"100%" - 30px);
+      // width: calc(~"100%" - 10px);
+      color: #fff;
+      .house_plan {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      p{
+        margin-bottom: 0px;
+        font-size: 1.2rem;
+      }
+      .card_container{
+        height: calc(~"100%" - 0px);
+        width: calc(~"100%" - 0px);
+        // margin: 5px;
+        padding: 0 5px;
+        overflow-y: auto;
+        .card_item{
+          border: 3px solid #1c96d5;
+          margin-bottom: 5px;
+          padding: 5px 10px;
+        }
+      }
+      .card_history{
+        height: calc(~"100%" - 40px);
+        margin-top: 10px;
+        .card_item{
+          position: relative;
+          .ext_btn{
+            position: absolute;
+            bottom: -3px;
+            right: -3px;
+            width: 87px;
+            height: 35px;
+            background: url(../../../../static/images/gawing/house_box_after5.png);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .ant-tabs-nav .ant-tabs-tab {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 2px 50px 5px 30px;
+    &::after{
+      content: url(../../../../static/images/gawing/house_box_after7.png);
+      position: absolute;
+      top: 0px;
+      width: 26px;
+      height: 31px;
+      right: -1px;
+      z-index: 2;
+    }
+  }
+  .ant-tabs-ink-bar {
+    height: 3px;
+    bottom: -3px;
+    left: 0x;
+    background-color: #0f1634;
+  }
+  .ant-tabs-nav-wrap {
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+  .ant-tabs-nav-scroll{
+    overflow: initial;
+    border-bottom: 2px solid #1c96d5;
+  }
+  .ant-tabs-bar {
+    border-bottom: 0px solid #1c96d5;
+    margin: 0 0;
+  }
+}
+// tabs
+
+.data_info_left{
+  background-color: #0f1634;
+  .data_info_left_bottom{
+    height: 100%;
+    border: 2px solid #1c96d5;
+    box-shadow: rgb(52,62,98) 0px 0px 20px inset;
+    .anchorBL{
+      display: none;
+    }
+  }
+}
+
+.data_info_right{
+  background-color: #0f1634;
+  .data_info_right_item{
+    width: 98%;
+    margin: 0 1%;
+    color: #fff;
+  }
+  .top_data_title{
+    text-align: center;
+    p{
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 10px 
+    }
+  }
+
+  .data_info_right_1{
+    height: 18.6%;
+    background: url(../../../../static/images/gawing/right_box1_1.png);
+    background-size: 100% 100%;
+    .top_data_title1{
+      text-align: center;
+      padding-top: 2.25rem;
+      border-bottom: 2px solid #176395;
+      margin-left: 1.25rem;
+      margin-right: 1.25rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.25rem;
+      position: relative;
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+    .face_top_block{
+      text-align: center;
+      .face_top_label{
+        font-size: 1.17rem;
+        margin-bottom: 0;
+      }
+      .face_top_value{
+        font-size: 2rem;
+        margin-bottom: 0;
+        line-height: 2rem;
+      }
+    }
+  }
+  .data_info_right_2{
+    height: 81.3%;
+    padding: 30px 10px;
+    background: url(../../../../static/images/gawing/right_box1_4.png);
+    background-size: 100% 100%;
+    .select_item{
+      width: 100%;
+    }
+    .card_container{
+      height: calc(~"100%" - 40px);
+      margin-top: 10px;
+      overflow-y: auto;
+      padding: 0 5px;
+      .police_block{
+        margin-bottom:10px;
+        background: url(../../../../static/images/gawing/house_box1.png) no-repeat;
+        background-size: 100% 100%;
+        padding: 0 10px 5px 10px;
+        h3{
+          font-size: 1.5rem;
+          overflow: hidden;
+          width: 60%;
+          text-align: center;
+          color: #fff;
+          margin-bottom: 5px;
+          cursor: pointer;
+        }
+        p{
+          margin-bottom: 0px;
+          font-size: 1.2rem;
+          overflow: hidden;
+        }
+      }
+      .personal_block{
+        background: url(../../../../static/images/gawing/house_box1.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .rentOut_block{
+        background: url(../../../../static/images/gawing/house_box2.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .groupLive_block{
+        background: url(../../../../static/images/gawing/house_box3.png) no-repeat;
+        background-size: 100% 100%;
+      }
+      .Internet_block{
+        background: url(../../../../static/images/gawing/house_box4.png) no-repeat;
+        background-size: 100% 100%;
+      }    
+
+
+    
+    }
+
+  }
+
+}
+
+.BMapLabel{
+  animation-name: fadeInUp;
+}
+.xq_window{
+  padding: 0px 15px 10px 15px;
+  position: relative;
+  color: #fff;
+  &:before{
+    content:"";
+    position:absolute;
+    left: -38px;
+    top: 6px;
+    width: 47px;
+    height: 50px;
+    box-sizing:border-box;
+    border-bottom:1px solid #82cbec;
+    transform-origin:bottom center;
+    // animation-name: fadeInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transform:rotateZ(-50deg);
+    // animation:slash 5s infinite ease;
+  }
+  .xq_window_title{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    line-height: 3rem;
+  }
+  .xq_window_wrap{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+  }
+  .xq_sanjiao{
+    width:0;
+    height:0;
+    border-width:10px 10px 0;
+    border-style:solid;
+    border-color: #5C93AB transparent transparent;/*灰 透明 透明 */
+    position: absolute;
+    left: 1rem;
+    bottom: -10px;
+  }
+  .xq_window_btn{
+    display: block;
+    width: 70px; 
+    height: 23px; 
+    margin: 5px;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    background-color: rgb(26, 34, 64);
+    cursor: pointer;
+  }
+}
+.bottom_fix{
+  width: 75%;
+  bottom: 0px;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  .bottom_left_block{
+    width: calc(~"100%" - 5px);
+    padding: 0.5rem 0 0 0.5rem;
+    border: 2spx solid #1c96d5;
+    height: calc(~"50%" - 15px);
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    .top_data_title1{
+      text-align: right;
+      border-bottom: 3px solid #1c96d5;
+      margin: 10px 5px 0 0;
+      padding: 2px 10px 16px 0;
+      float: right;
+      position: relative;
+      width: calc(~"100%" - 485px);
+      p{
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+
+    &::before{
+      content: url(../../../../static/images/gawing/house_box_after0.png);
+      position: absolute;
+      top: -3px;
+      z-index: 1;
+      left: -3px;
+    }
+    .card_container{
+      overflow-y: auto;
+      height: calc(~"100%" - 70px);
+      margin-top: 10px;
+      padding:0 5px;
+      
+    }
+    .bottom_monitor_item{
+      margin-bottom: 8px;
+      border: 2px solid #1c96d5;
+      height: 15rem;
+      padding: 5px;
+      .people_img{
+        width: 30%;
+        height: 100%;
+        margin-right: 5px;
+        border: 2px solid #1c96d5;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .people_info{
+        width: calc(~"70%" - 5px);
+        p{
+          color: #fff;
+          margin-bottom: 0;
+          font-size: 1.2rem;
+          span{
+            padding: 0 5px;
+            border: 1px solid #1c96d5;
+            margin-right: 5px;
+            white-space: nowrap;
+          }
+        }
+
+      }
+      &::after{
+        content: url(../../../../static/images/gawing/house_box_after3.png);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        right: 4px;
+      }
+    }
+  }
+  .bottom_right_block{
+    width: 100%;
+    height: 50%;
+    .bottom_left_box{
+      height: 100%;
+      width: calc(~"55%" - 10px);
+      overflow: hidden;
+      color: #fff;
+      margin: 0 5px;
+      .bottom_monitor_block{
+        width:100%;
+        height:100%;
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        overflow: hidden;
+        -webkit-mask-image: url('../../../../static/images/gawing/box_mask.png');
+        img{
+          width:100%;
+          height:100%;
+        }          
+      }
+    }
+    .bottom_right_box{
+      height: 100%;
+      width: 45%;
+      overflow: hidden;
+      color: #fff;
+      border: 2px solid #1c96d5;
+      position: relative;
+      &::after{
+        content: url(../../../../static/images/gawing/house_box_after8.png);
+        position: absolute;
+        bottom: -10px;
+        left: -6px;
+      }
+
+    }
+  }
+}
+
+
+
+.closeBtn{
+  position: absolute;
+  top: -5px;
+  right: 0;
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+
+
+
+.house_modal{
+  height: 67rem;
+  background: url(../../../../static/images/gawing/house_modal_bg2.png);
+  background-size: 100% 100%;
+  h3{
+    font-size: 2rem;
+    color: #a2eaff;
+    span{
+      font-size: 1.67rem;
+      color: #fff;
+      font-weight: normal;
+    }
+  }
+  .ant-modal-close{
+    margin-top: 30px;
+  }
+  .ant-modal-close-icon{
+    display: none;
+  }
+  .ant-modal-header {
+    background: transparent;
+    border-bottom: none;
+  }
+  .ant-modal-content {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0 2rem;
+    p{
+      font-size: 1.1rem;
+      color: #fff;
+      text-indent: 2rem;
+      margin-bottom: 0px;
+    }    
+  }
+  .house_block{
+    clear: both;
+    height: 23rem;
+    .house_img{
+      width: 45%;
+      height: 100%;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .house_info{
+      width: 50%;
+      p{
+        font-size: 1.2rem;
+      }    
+      .type_personal{
+        color: #1c96d5;
+      }
+      .type_rentOut{
+        color: #f8b551;
+      }
+      .type_groupLive{
+        color: #e60012;
+      }
+      .type_Internet{
+        color: #22ac38;
+      }
+    }
+  }
+  .history_block{
+    h3{
+      margin-top: 20px;
+      font-size: 1.3rem;
+    }
+    .card_container{
+      padding: 0 5px;
+      height: 28rem;
+      overflow-y: auto;
+    }
+    .card_item{
+      border: 2px solid #1c96d5;
+      margin-bottom: 8px;
+      padding: 10px;
+      img{
+        width: 30%;
+        float: left;
+      }
+      .person_info{
+        width: 100%;
+      }
+    }
+  }
+}
+
+.house2_modal{
+  height:  76rem;
+  background: url(../../../../static/images/gawing/house_modal_bg1.png);
+  background-size: 100% 100%;
+  .tabs_block{
+    border: 2px solid #1c96d5;
+  }
+  .ant-tabs-tabpane{
+    padding: 10px 5px;
+
+  }    
+  .ant-tabs .ant-tabs-content .ant-tabs-tabpane .card_container{
+    height: 28rem;
+  }
+}
+
+.face_top_block{
+  .img_block{
+    width: 36px;
+    height: 36px;
+    background-image: url(../../../../static/images/gawing/top_icons.png);
+    margin: 0 auto;
+    // background-repeat:no-repeat;
+    // background-attachment:fixed;
+  }
+  .img_block1{
+    background-position: -36px 0;
+  }
+  .img_block2{
+    background-position: -36px 36px;
+  }
+  .img_block3{
+    background-position: -36px 72px;
+  }
+  .img_block4{
+    background-position: -36px 108px;
+  }
+}
+
+
+.ant-select-selection{
+  border: 1px solid #1c96d5;
+  background: #176395;
+  color: #fff;
+
+}
